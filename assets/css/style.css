@@ -1,0 +1,33 @@
+body {
+    background: url("../images/stripes-light.png");
+    display: block;
+}
+
+h1 {
+    background-color: lightblue;
+    color: white;
+    padding: 20px 20px;
+    margin: 0;
+    display: block;
+    
+
+}
+
+p, h2 {
+    background-color: pink;
+    color: whitesmoke;
+    padding: 15px;
+    font-size: 20px;
+    margin: 0;
+}
+
+img {
+    width: 10%;
+    height: 10%;
+}
+
+button {
+    width: 40%;
+    background: none;
+    border: none;
+}

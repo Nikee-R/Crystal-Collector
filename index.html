@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Crystal Collector</title>
+
+        <!-- Link to jQuery Library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script></script>
+
+        <!-- Link css in assets -->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
+
+    <body>
+        <!-- This is everything displayed on the webpage. -->
+        <!-- Header -->
+        <h1>Crystal Collector!</h1>
+        <!-- Paragraph with instructions -->
+        <h2>
+            Directions
+        </h2>
+        <p>
+            You will be give a random number at the start of the game.
+            <br>
+            There are four crystals below. By clicking on a crystal you 
+            will add a specific amount of points to your total score.
+            <br>
+            You win the game by matching your total score to the randomized
+            number. You will lose the game if your total score goes above
+            the random number.
+            <br>
+            The value of each crystal is hidden from you until you click on it.
+            <br>
+            Each time the game starts, the values of each crystal will be changed.
+        </p>
+        <!-- Objective Number -->
+        <h2 class="objective">
+
+        </h1>
+        <!-- Scoreboard -->
+       <h3 id="wins">
+            Wins:
+       </h3>
+       <h3 id="losses">
+            Losses: 
+       </h3>
+        <!-- Crystal Images are set up as buttons -->
+        <div class="container">
+            <div class="col-sm-4">
+                <div class="crystals">
+                    <button id="amethyst"><img src="assets/images/amethyst.jpg"/></button>
+                    <button id="aquamarine"><img src="assets/images/aquamarine.jpg"/></button>
+                    <button id="lapis"><img src="assets/images/lapis.jpg"></button>
+                    <button id="rosequartz"><img src="assets/images/rosequartz.jpg"/></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Your Score -->
+        <p>
+            Your current score is: 
+        </p>
+        <br>
+        <h3 id="score">
+
+        </h3>
+        <!-- Script -->
+        <script type="text/javascript" src="assets/javascript/game.js">
+        // The variables for the wins and losses.
+        var wins = 0;
+        var losses = 0;
+
+        // The variable that pulls a random number for the objective of the game.
+        var objective = Math.floor(Math.random() * 121 + 19);
+        // This assigns random values to the crystals.
+        var crystals = Math.floor(Math.random() * 11 + 1)
+
+        
+
+        </script>
+    </body>
+</html>
