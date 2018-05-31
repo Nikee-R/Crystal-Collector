@@ -64,41 +64,11 @@
         <p>
             Your current score is: 
         </p>
-        <br>
-        <h3 id="score">
-            
+        <h3>
+        <span id="score"></span>
         </h3>
-        <!-- Script -->
-        <script type="text/javascript">
-        // The variables for the wins and losses.
-        var wins = 0;
-        var losses = 0;
-        var counter = 0;
-        // The variable that pulls a random number for the objective of the game.
-        var objective = Math.floor(Math.random() * 121 + 19);
-        // This assigns random values to the crystals.
-        var crystals = Math.floor(Math.random() * 11 + 1);
-        $("#objective").html(objective);
-        console.log(objective);
-        // Onclick function for the crystals.
-        // $("#amethyst").on("click", function() {
-        
-        //};
 
-        // Function that determines wins.
-        function win() {
-            wins++;
-            $("#wins").html(wins);
-        };
-        // Funciton that determines losses.
-        function losses() {
-            losses++;
-            $("#losses").html(losses);
-        };
-        //
-
-        
-
-        </script>
+        <!-- Script Link -->
+        <script src="assets/javascript/game.js"></script>
     </body>
 </html>

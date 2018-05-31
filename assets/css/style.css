@@ -13,17 +13,17 @@ h1 {
 
 }
 
-p, h2 {
+p, h2, h3{
     background-color: pink;
-    color: whitesmoke;
+    color: white;
     padding: 15px;
     font-size: 20px;
     margin: 0;
 }
 
 img {
-    width: 10%;
-    height: 10%;
+    width: 20%;
+    height: 20%;
 }
 
 button {
